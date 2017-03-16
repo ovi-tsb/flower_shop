@@ -1,3 +1,53 @@
-<h1>Flower Shop</h1>
-<p>The new flower shop right on Your area.</p>
-<p>Welcome! The date and time is <%= Time.now %></p>
+<div class="banner container-fluid">
+  <h2>Featured Products</h2>
+</div>
+
+<article class="container product col-md-8 col-sm-8 col-xs-12">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-6">
+      <%= image_tag("Arrive-In-Style.jpg", class: "   img-responsive") %>
+      <p>Arrive-In-Style</p>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-6">
+      <%= image_tag("Full-Of-Love.jpg", class: "  img-responsive" ) %>
+      <p>Full-Of-Love</p>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-6">
+      <%= image_tag("juliet-garden.jpg", class: " img-responsive ") %>
+      <p>Juliet-Garden</p>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-6">
+      <%= image_tag("Pink-Exuberance.jpg", class: "   img-responsive") %>
+      <p>Pink-Exuberance</p>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-6">
+      <%= image_tag("Rouge-Reflections.jpg", class: "   img-responsive") %>
+      <p>Rouge-Reflections</p>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-6">
+      <%= image_tag("Simple-Surprises.jpg", class: "    img-responsive") %>
+      <p>Simple-Surprises</p>
+    </div>
+  </div>
+</article>
+<aside class="aside col-md-4 col-sm-4 col-xs-12">
+  <div class="birthday">
+    <%= image_tag("spring-flowers.jpg", class: "   img-responsive") %>
+    <p>Birthday Flowers</p>
+  </div>
+  <div class="bestsell">
+    <%= image_tag("roses.jpg", class: "   img-responsive") %>
+    <p>Best Sellers</p>
+  </div>
+  <div class="weddings">
+    <%= image_tag("weddings.jpg", class: "   img-responsive") %>
+    <p>Weddings</p>
+  </div>
+</aside>
+
+
+
+
+
+
+
