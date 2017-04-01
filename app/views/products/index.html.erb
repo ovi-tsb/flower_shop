@@ -1,0 +1,29 @@
+<article class="container product col-md-8 col-sm-8 col-xs-12">
+  <p id="notice"><%= notice %></p>
+  <h2>Products</h2>
+  <hr>
+  <div class="container-fluid prod">
+    <div class="row">
+     <% @products.each do |product| %>
+       <%= render product %>
+     <% end %>
+    </div>
+  </div>
+    <br>
+    <hr>
+    <%= link_to 'New Product', new_product_path , class: "btn btn-default" %>
+</article>
+<aside class="aside col-md-4 col-sm-4 col-xs-12">
+  <div>
+    <h2>Birthday</h2>
+    <%= image_tag("spring-flowers.jpg", class: "   img-responsive") %>
+  </div>
+  <div>
+    <h2>Bestsell</h2>
+<%= image_tag("roses.jpg", class: "   img-responsive") %>
+  </div>
+  <div>
+    <h2>Weddings</h2>
+    <%= image_tag("weddings.jpg", class: "   img-responsive") %>
+  </div>
+</aside>

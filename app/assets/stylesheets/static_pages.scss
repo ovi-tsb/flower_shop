@@ -14,25 +14,42 @@ h1 {
   text-align : center;
   font-family : "Arial Black", Gadget, sans-serif;
   font-size: 2.3em;
-  margin: 70px 0 -58px 0;
-}
-h2 {
-  margin-left :50px;
+  margin: 70px 0 0 0;
 }
 .navbar ul {
   float:right;
 }
-.wrapper {
-  min-height : 100%;
-  margin-bottom:60px;
+.navbar ul li a:active {
+  color: green;
+}
+.navbar a:hover {
+  color: red;
 }
 .footer {
   background-color: #333333;
   color : #fff;
   position: relative;
   line-height:60px; 
-  height: 60px;
+  height: 80px;
   clear: both;
+}
+.footer p {
+  margin-top: 10px;
+}
+.about {
+  padding: 20px;
+}
+.about h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.glyphicon {
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 1.5em;
+  color: #ff8300;
+  
 }
 .contact {
   margin: 20px;
@@ -55,64 +72,153 @@ h2 {
 .cover-text {
   text-align: center;
   color: white;
-  display: table-cell;
-  vertical-align: middle;
+  display: table;
+  margin: 0 auto;
   font-size: 26px;
   text-shadow:2px 2px 2px #000 ;
-  
 }
 .cover-text h2 {
   font-size: 2em;
-  margin-top: 30%;
+  margin-top: 50%;
+  text-align: center;
 }
 .banner {
-  background-color: #c2c466;
+  background-color: #0b5991;
   height: 80px;
 }
 .banner h2 {
   text-align: center;
+  color:  #fff;
 }
-.product {
-  margin-top: 25px;
-  float: left;
+
+.category {
+  margin-bottom: 25px;
 }
-.product img {
-  margin: 25px auto;
-  border : 3px solid #919191;
-}
-.product p {
+.category h4 {
+  background-color : #AAAEB1;
+  height: 40px;
+  width: 100%;
+  margin-bottom: -1px;
+  margin-top: 25px; 
+  line-height: 40px;
   text-align: center;
-  font-size: 1.3em;
-  color: #5e5e5e; 
+}
+.carousel-caption {
+  margin-bottom: 0;
+  position: absolute;
+  color: black;
+  font-size: 1.4em;
+}
+.carousel-inner img {
+  padding-bottom: 80px;
+  margin: 0 auto;
+  width: 40%;
+}
+.carousel-indicators li {
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: -25px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    border:1px solid #6b6b6b;
+}
+.carousel-indicators .active {
+    margin: 10px;
+     margin-bottom: -25px;
+    background-color: #fcb53a;
+}
+.carousel-control:hover {
+  background: none;
 }
 .aside {
-  float: right;
-  padding :20px;
+  margin-top: 25px;
 }
-.aside img {
-  
-  margin: 15px auto;
-}
-.aside p {
-  height: 50px;
-  
-  
-  background : #919191;
-  color: #fff;
-  font-size: 1.9em;
+.aside h2 {
+  font-size: 1.7em;
+  color: white;
   text-align: center;
-  line-height: 50px;
-  margin-top: -15px;
+  background: grey;
+  padding: 5px;
+  margin-bottom: -1px;
+}
+@media (min-width: 550px) and (max-width: 770px) {
+  .navbar-inverse  {
+    background: transparent;
+    border: none;
+  }
+  .navbar-collapse {
+    background: transparent;
+    background-image: none;
+  }
+  .navbar-collapse ul li {
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+    background: #3f3f3f;
+  }
+  .navbar-collapse ul {
+    margin-top: -1px;
+  }
+  .navbar-header {
+    background: #3f3f3f;
+  }
+  .navbar-toggle {
+    background-color: #6d6d6c;
+  }
+  .carousel-caption {
+    position: absolute;
+  }
+  .carousel-indicators li {
+    margin-bottom: -15px;
+  }
+  .carousel-indicators .active {
+    margin-bottom: -15px;
+  }
+
 }
 @media (max-width: 550px) {
+ 
   .cover-text h2 {
     font-size: 1.3em;
-    margin-top: 50%;
-    text-align: center;
+    margin: 0 auto;
+    margin-top: 90%;
+  }
+  .cover-text p {
+    margin-top: -50px;
   }
   .cover{
-    margin-top: -100px;
+    margin-top: 0;
     padding:0;
+  }
+  .navbar-inverse  {
+    background: transparent;
+    border: none;
+  }
+  .navbar-collapse {
+    background: transparent;
+    background-image: none;
+  }
+  .navbar-collapse ul {
+    margin-top: -1px;
+  }
+  .navbar-collapse ul li {
+    border-bottom: 1px solid rgba(204,204,204,0.5);
+    background: #3f3f3f;
+  }
+  .navbar-header {
+    background: #3f3f3f;
+  }
+  .navbar-toggle {
+    background-color: #6d6d6c;
+  }
+  .carousel-caption {
+    position: absolute;
+  }
+  .carousel-indicators li {
+    margin-bottom: -15px;
+  }
+  .carousel-indicators .active {
+    margin-bottom: -15px;
   }
 }
 

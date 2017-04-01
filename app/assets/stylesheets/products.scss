@@ -1,0 +1,47 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.prod h3 {
+  font-size: 1.5em;
+  color: #840000;
+  text-align: center;
+}
+.one-prod {
+  border : 1px solid grey;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.btn-default {
+  margin: 0;
+  font-size: 0.7em;
+}
+.show {
+  border:1px solid grey;
+  margin: 20px auto;
+  padding: 25px;
+}
+.show img {
+  width: 70%;
+  margin: 10px auto;
+}
+.one-prod > .time {
+  font-size: 0.7em;
+}
+
+.actions input {
+  padding: 4px;
+  background: #d3d3d3;
+  border: 1px solid grey;
+}
+.actions input:hover {
+  background: white;
+  border: 1px solid grey;
+}
+.field input,
+.field textarea,
+.new_product input,
+.new_product textarea  {
+  resize: none;
+  width: 40%;
+}
